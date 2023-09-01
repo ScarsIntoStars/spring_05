@@ -4,8 +4,10 @@
     <title>Title</title>
 </head>
 <body>
-    <h2>demo1.jsp</h2>
-    <a href="/req1?name=손흥민&age=31">req1 요청</a>
+    <h2>demodb3.jsp</h2>
+    ${demo}
+    ${demo.name}
+    ${demo.age}
 
 </body>
 </html>

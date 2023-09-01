@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace 반드시 작성! 비어 있어도 오류가 남-->
+<mapper namespace="Demo">
+    <insert id="save" parameterType="com.icia.demo.dto.DemoDTO">
+        insert into demo_table(name, age)
+            values(#{name}, #{age})
+    </insert>
+    <!-- resultType는 리스트가 아니라 경로를 적어줌 , sql문에 세미클론 ㄴㄴ, 알리아스에서 저 경로를 demo로 별칭설정을 했음-->
+    <select id="findAll" resultType="demo">
+        select * from demo_table
+    </select>
+
+    <select id="findById" parameterType="Long" resultType="com.icia.demo.dto.DemoDTO">
+        select * from demo_table where id=#{id}
+    </select>
+      
+</mapper>
+
+
+
+
+
+
+
+
+

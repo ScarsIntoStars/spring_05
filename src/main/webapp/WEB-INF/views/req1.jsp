@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <h1> demo1 출력페이지</h1>
-    ${demoDTO}
+    <h2>req1.jsp</h2>
+    ${demo}
+    ${demo.name}
+    ${demo.age}
+
 </body>
 </html>
